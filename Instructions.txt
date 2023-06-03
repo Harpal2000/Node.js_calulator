@@ -1,0 +1,28 @@
+### Installation
+
+1. Make sure you have Node.js installed on your machine. You can download it from https://nodejs.org.
+
+2. Clone this repository or download the source code.
+
+3. Open a terminal or command prompt and navigate to the project's root directory.
+
+3. Install the dependencies by running the following command:
+
+========>>> npm install
+
+### Usage
+--------------------------------------------------------
+
+1. Start the application by running the following command:
+
+============>>> npm start or npm index.js
+
+2. Open your web browser and go to http://localhost:3000 to access the calculator.
+
+### database
+
+1. Make Sure you have xampp server installed.
+
+2. Create a Database in phpMyadmin with the name 'cal_db'.
+
+3. Now export the database 'cal_db.sql' in your created database.

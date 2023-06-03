@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/cal.css">
+</head>
+
+<body onload="getData()">
+    <div class="container">
+
+        <div class="main_cal_div">
+            <h1>Calculator</h1>
+            <div class="cal_div">
+                <div id="output_div" class="output_div">0</div>
+                <div class="cal_keys">
+                    <button class="key op_key_b" onclick="clearOutput()">AC</button>
+                    <button class="key op_key_b" onclick="changeSign()">+/-</button>
+                    <button class="key op_key_b" onclick="appendOperator('%')">%</button>
+                    <button class="key op_key_y" onclick="appendOperator('/')">&divide;</button>
+                    <button class="key op_key_lb" onclick="appendNumber(7)">7</button>
+                    <button class="key op_key_lb" onclick="appendNumber(8)">8</button>
+                    <button class="key op_key_lb" onclick="appendNumber(9)">9</button>
+                    <button class="key op_key_y" onclick="appendOperator('*')">&times;</button>
+                    <button class="key op_key_lb" onclick="appendNumber(4)">4</button>
+                    <button class="key op_key_lb" onclick="appendNumber(5)">5</button>
+                    <button class="key op_key_lb" onclick="appendNumber(6)">6</button>
+                    <button class="key op_key_y" onclick="appendOperator('-')">-</button>
+                    <button class="key op_key_lb" onclick="appendNumber(1)">1</button>
+                    <button class="key op_key_lb" onclick="appendNumber(2)">2</button>
+                    <button class="key op_key_lb" onclick="appendNumber(3)">3</button>
+                    <button class="key op_key_y" onclick="appendOperator('+')">+</button>
+                    <button class="key zero_key op_key_lb" onclick="appendNumber(0)">0</button>
+                    <button class="key op_key_lb" onclick="appendOperator('.')">.</button>
+                    <button class="key op_key_y" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+            <h3>Calculation Name</h3>
+            <input type="text" id="getName" placeholder="Enter Name">
+            <Button type="submit" name="save" id="svBtn" onclick="saveData()">Save</Button>
+        </div>
+
+        <div class="op_table_div">
+            <h1>Your Calculations</h1>
+            <div id="tableBody"></div>
+        </div>
+
+    </div>
+    <script src="/scripts/cal.js"></script>
+
+</body>
+
+</html>
